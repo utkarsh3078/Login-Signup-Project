@@ -1,7 +1,10 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
+const cors = require('cors');
 require('dotenv').config();
 const mongoose = require('mongoose');
+const AuthRouter = require("./Routes/Authrouter.js");
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/authentication";
 main()
@@ -14,7 +17,9 @@ async function main(){
     await mongoose.connect(MONGO_URL);
 }
 
-
+app.use(bodyParser.json());
+app.use(cors());
+app.use("/auth", AuthRouter);
 const PORT = process.env.PORT || 8080;
 
 
