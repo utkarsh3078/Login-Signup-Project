@@ -1,10 +1,10 @@
-# MERN Stack Authentication Project
+# MERN Stack LOGIN-SIGNUP-Project
 
-A robust authentication system built using the MERN (MongoDB, Express, React, Node.js) stack, providing secure user management for web applications.
+A Login-Signup-Project built using the MERN (MongoDB, Express, React, Node.js) stack, In this project a user can signup by writting his name, email and pasword, if user already exist then website will show that user already exist, go to login page for login. 
 
 ## Features
 
-- User registration and login
+- User Signup and login
 - JWT (JSON Web Token) based authentication
 - Password hashing for enhanced security
 - Protected routes for authenticated users
