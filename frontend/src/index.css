@@ -16,3 +16,64 @@ body{
   height: 100%;
   width: 100%;;
 }
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.logo{
+  width: 400px;
+  height: 400px;
+  fill: white;
+  margin-right: 300px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.container{
+display: flex;
+justify-content: space-evenly;
+}
+
+.form h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.form form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;;
+}
+.form div{
+  display: flex;
+  flex-direction: column;
+}
+.form input{
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.form input::placeholder{
+  font-size: 12px;
+}
+button{
+  background-image: linear-gradient(to bottom right, red, yellow);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+button:hover{
+  transition: all 1s ease;
+}
